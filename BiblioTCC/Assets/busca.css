@@ -1,0 +1,86 @@
+﻿ul {
+    padding: 0;
+}
+.text-repeater {
+    text-align: center;
+    white-space: nowrap;
+}
+.pesquisar-div {
+    width: 800px;
+    color: #FFD369ff;
+}
+#pesquisarTextBox{
+    margin-left:10px;
+    padding: 5px;
+}
+#genDropDownList{
+    margin-right:10px !important;
+    padding:5px;
+}
+.container-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.container-all-inside {
+    /*width: 1040px;*/
+}
+.bg-hover-yellow:hover {
+    background-color: yellow !important;
+}
+.pesquisarButton {
+    background-color: #FFD369;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.cards-times {
+    padding:100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.times {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size:18px;
+    padding: 25px;
+    background-color: #222831;
+    width: 300px;
+    height:350px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+    .times:hover {
+        border: 1px solid #ddae3e;
+        /*transform: scale(1.01);*/
+        transition: 0.3s all ease;
+    }
+
+.logo-time {
+    height: 250px;
+    width: 180px;
+}
+.btnPesquisar:hover {
+    background-color: #FFD369;
+    color: black !important;
+}

@@ -1,0 +1,258 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+    color: #ffffff;
+}
+.custom-gridview {
+    background-color: #f2f2f2;
+    color: #000000;
+    padding: 100px;
+}
+
+    .custom-gridview th,
+    .custom-gridview td {
+        border-color: #dddddd;
+    }
+
+    .custom-gridview .custom-header {
+        background-color: #f2f2f2;
+        color: #000000;
+    }
+
+.esse {
+    color: black;
+}
+.container {
+    /*width: calc(100% - 100px);*/
+    height: calc(100vh - 76px);
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+    grid-gap: 50px;
+}
+
+.left {
+   
+    margin: 50px 0 50px 50px;
+    padding: 50px;
+    height: calc(100% - 100px);
+}
+
+.right {
+   
+    margin: 50px 50px 50px 0;
+    padding: 50px;
+    height: calc(100% - 100px);
+    overflow: auto;
+}
+.pesquisarButton {
+    background-color: #FFD369;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.forms-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .forms-container div {
+        width: 100%;
+    }
+
+.forms-container-side {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 12px;
+    margin-bottom: 15px;
+}
+
+.forms-container-button-div {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-div {
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.extrairButton {
+    background-color: #8AF0BA;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.forms-container-button-div-div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    grid-gap: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        grid-area: b;
+        margin: 50px;
+        padding: 25px;
+        margin-bottom: 0;
+    }
+
+    .right {
+        grid-area: a;
+        margin: 50px;
+        padding: 25px;
+        margin-top: 0;
+    }
+
+    .forms-container-side {
+        flex-direction: column;
+        grid-gap: unset;
+        margin-bottom: unset;
+    }
+}
+
+/*INÍCIO FORM-CONTROL*/
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+    .form-control:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+
+    .form-control::-moz-placeholder {
+        color: #999;
+        opacity: 1;
+    }
+
+    .form-control:-ms-input-placeholder {
+        color: #999;
+    }
+
+    .form-control::-webkit-input-placeholder {
+        color: #999;
+    }
+
+    .form-control::-ms-expand {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .form-control[disabled],
+    .form-control[readonly],
+    fieldset[disabled] .form-control {
+        background-color: #eee;
+        opacity: 1;
+    }
+
+    .form-control[disabled],
+    fieldset[disabled] .form-control {
+        cursor: not-allowed;
+    }
+
+textarea.form-control {
+    height: auto;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type="date"].form-control,
+    input[type="time"].form-control,
+    input[type="datetime-local"].form-control,
+    input[type="month"].form-control {
+        line-height: 34px;
+    }
+}
+/*FINAL FORM-CONTROL*/
+
+/*INICIO GRID*/
+
+#ContentPlaceHolder1_pesquisaGridView > tbody > tr:nth-child(1) {
+    text-align: left;
+}
+
+/*FINAL GRID*/
+
+/*INICIO CONTAINERS*/
+
+.relatorio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relatorio-container-div {
+    width: calc(100% - 100px);
+    height: calc(100vh - 76px);
+ 
+    overflow: auto;
+}
+
+.relatorio-forms-div {
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.relatorio-gridview-div {
+    padding: 50px;
+    padding-top: 0;
+}
+
+/*FINAL CONTAINERS*/

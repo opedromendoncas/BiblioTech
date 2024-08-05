@@ -1,0 +1,198 @@
+﻿@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+}
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+.container-all {
+    background-color: rgb(53, 53, 57) !important;
+    color: white;
+    font-size: 20px;
+}
+.container {
+    background-color: rgb(53, 53, 57) !important;
+    font-size: 20px;
+}
+
+.container-fluid {
+    background-color: rgb(53, 53, 57) !important;
+    font-size: 20px;
+}
+.pesquisarButton {
+    background-color: #FFD369;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+    .pesquisarButton:hover {
+        background-color: #e4a41c;
+    }
+
+.row {
+}
+
+#page-wrapper {
+    margin: 100px;
+}
+
+.right {
+    float: right;
+    width: 30%;
+    padding: 50px;
+    margin-right: 150px;
+    margin-top:75px;
+}
+#multaTextBox {
+    padding: 35px;
+    width: 20%;
+}
+
+.left {
+    float: left;
+    width: 30%;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+#modal {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 400px;
+    padding: 50px;
+    position: fixed;
+    transition: 0.5s;
+    visibility: hidden;
+    border-radius: 10px;
+    background: #393E46;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+}
+
+    #modal.active {
+        top: 50%;
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+    }
+
+    #modal h2 {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    #modal a {
+        text-decoration: none;
+        width: 100px;
+        height: 35px;
+        background-color: #ddae3e;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        transition: ease 0.4s all;
+        cursor: pointer;
+    }
+
+        #modal a:hover {
+            background-color: #d39c1a;
+        }
+
+    #modal p {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+
+
+.modal-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#modal-button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal2 {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 600px;
+    padding: 50px;
+    position: fixed;
+    transition: 0.5s;
+    visibility: hidden;
+    border-radius: 10px;
+    background: #393E46;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+}
+
+    #modal2.active {
+        top: 50%;
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+    }
+
+
+#modal-button-close2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-button-close2 {
+    text-decoration: none;
+    width: 100px;
+    height: 35px;
+    background-color: #ddae3e;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: ease 0.4s all;
+    cursor: pointer;
+}
+
+modal-button-close2:hover {
+    background-color: #d39c1a;
+}
+
+#modal2 h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#modal2 p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+﻿﻿﻿body {
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-all-inside {
+    /*width: 1040px;*/
+}
+
+.bg-hover-yellow:hover {
+    background-color: yellow !important;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 300px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.materiais {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 50px;
+    background-color: #222831;
+    width: 220px;
+    border: 1px solid transparent;
+}
+.pesquisarButton {
+    background-color: #FFD369;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+    .pesquisarButton:hover {
+        background-color: #e4a41c;
+    }
+
+
+    .materiais:hover {
+        border: 1px solid #ddae3e;
+        /*transform: scale(1.01);*/
+        transition: 0.3s all ease;
+    }
+
+.logo-img {
+    width: 120px;
+    height: 105px;
+    border-radius: 50%;
+    border: 4px solid #323232;
+    margin-top: -50px;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}

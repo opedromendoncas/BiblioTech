@@ -1,0 +1,351 @@
+﻿.body {
+    margin: 0;
+    background-color: rgb(53, 53, 57) !important;
+    font-size: 20px;
+}
+.custom-gridview {
+    background-color: #f2f2f2;
+    color: #000000;
+    padding:100px;
+}
+
+    .custom-gridview th,
+    .custom-gridview td {
+        border-color: #dddddd;
+    }
+
+    .custom-gridview .custom-header {
+        background-color: #f2f2f2;
+        color: #000000;
+    }
+    .esse{
+        color:black;
+    }
+/*INICIO MODAL*/
+
+.atualizacaoModal {
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    color:black;
+    padding: 50px;
+    position: fixed;
+    transition: 0.5s;
+    border-radius: 10px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+}
+
+
+.xButtonDiv {
+    display: flex;
+    justify-content: end;
+}
+
+.xButton,
+.xButton:hover,
+.xButton:focus {
+    color: black;
+}
+
+.salvarButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pesquisarButton {
+    background-color: #FFD369;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+    .pesquisarButton:hover {
+        background-color: #e4a41c;
+    }
+.confirmarButton {
+    background-color: #43cb67;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+    .confirmarButton:hover {
+        background-color: #2cae4e;
+    }
+
+.cancelarButton {
+    background-color: #9191a3;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+    .cancelarButton:hover {
+        background-color: #6d6d7b;
+    }
+
+/*FINAL MODAL*/
+
+.container {
+    background-color: rgb(53, 53, 57) !important;
+    font-size: 20px;
+}
+.container-fluid {
+    background-color: rgb(53, 53, 57) !important;
+    font-size: 20px;
+}
+.form-control{
+    color:black;
+}
+.nav-tabs {
+    --bs-nav-tabs-border-width: 1px;
+    --bs-nav-tabs-border-color: rgb(53, 53, 57) !important; 
+    --bs-nav-tabs-border-radius: 0.375rem;
+    --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
+    --bs-nav-tabs-link-active-color: #495057;
+    --bs-nav-tabs-link-active-bg: #fff;
+    --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
+    border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+}
+.Initial {
+    display: block;
+    padding: 4px 18px 4px 18px;
+    float: left;
+    background-color: rgb(53, 53, 57);
+    color: white;
+    font-weight: bold;
+   
+}
+
+    .Initial:hover {
+        color: White;
+        
+    }
+
+.Clicked {
+    float: left;
+    display: block;
+    background: url("../Images/SelectedButton.png") no-repeat right top;
+    padding: 4px 18px 4px 18px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(53, 53, 57);
+    border-radius: 15% 0 0 0;
+    border-bottom: 3px solid #FFD369;
+}
+    .Clicked:hover {
+        color: White;
+    }
+.second-tab{
+    padding:80px;
+}
+.navs{
+    list-style:none;
+}
+    .row {
+    }
+#page-wrapper{
+    margin:100px;
+}
+.right {
+    float: right;
+    width: 40%;
+    padding: 50px;
+    margin-right: 150px;
+}
+.left {
+    float: left;
+    width: 30%;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+#modal {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 400px;
+    padding: 50px;
+    position: fixed;
+    transition: 0.5s;
+    visibility: hidden;
+    border-radius: 10px;
+    background: #393E46;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+}
+
+    #modal.active {
+        top: 50%;
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+    }
+
+    #modal h2 {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    #modal a {
+        text-decoration: none;
+        width: 100px;
+        height: 35px;
+        background-color: #ddae3e;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        transition: ease 0.4s all;
+        cursor: pointer;
+    }
+
+        #modal a:hover {
+            background-color: #d39c1a;
+        }
+
+    #modal p {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+
+
+.modal-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#modal-button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal2 {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 600px;
+    padding: 50px;
+    position: fixed;
+    transition: 0.5s;
+    visibility: hidden;
+    border-radius: 10px;
+    background: #393E46;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+}
+
+    #modal2.active {
+        top: 50%;
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+    }
+
+
+#modal-button-close2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-button-close2 {
+    text-decoration: none;
+    width: 100px;
+    height: 35px;
+    background-color: #ddae3e;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: ease 0.4s all;
+    cursor: pointer;
+}
+
+modal-button-close2:hover {
+    background-color: #d39c1a;
+}
+
+#modal2 h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#modal2 p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.modalBackground {
+    background-color: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalPopup {
+    top: 50%;
+    left: 50%;
+    background: #393E46;
+    border-radius: 10px;
+    background: #393E46;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+}
+
+.modalHeader {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modalBody {
+    margin-bottom: 10px;
+}
+
+.modalFooter {
+    text-align: right;
+}

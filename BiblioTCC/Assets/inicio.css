@@ -1,0 +1,87 @@
+﻿body {
+    margin: 0;
+    background-color: rgb(53, 53, 57) !important;
+}
+
+.body {
+    margin: 0;
+    background-color: rgb(53, 53, 57) !important;
+}
+
+.container-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-intro {
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+
+    .text-intro p {
+        font-size: 20px;
+    }
+
+.container-all-inside {
+    /*width: 1040px;*/
+}
+.pesquisarButton {
+    background-color: #FFD369;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.cards-times {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.times {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #222831;
+    width: 280px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.text-p {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.times:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 5px 5px rgb(29, 28, 28);
+    transition: 0.3s ease-in-out;
+}
+
+.logo-time {
+    height: 150px;
+    width: 150px;
+}

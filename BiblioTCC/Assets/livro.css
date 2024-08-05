@@ -1,0 +1,179 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+ 
+}
+
+.fa {
+    
+}
+
+.title-menu {
+    
+}
+.btnExit {
+    position: fixed;
+    padding: 5px;
+    padding-left:15px;
+    padding-bottom:25px;
+}
+.seila {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #ddae3e !important;
+    background-color: #ddae3e;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.menu-container-div {
+    width: calc(100% - 100px);
+    height: calc(80vh - 10px);
+    padding:50px;
+ 
+}
+.pesquisarButton {
+    background-color: #FFD369;
+    outline: none;
+    border: none;
+    color: #08083D;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+    .pesquisarButton:hover {
+        background-color: #e4a41c;
+    }
+
+
+.container-home {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+}
+
+.section {
+    width: 100%;
+}
+
+.section-left {
+    grid-area: a;
+    display: flex;
+    /*align-items: center;*/
+    flex-direction: column;
+    /*padding: 50px;*/
+}
+
+.section-left-items h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+  
+    .section-left-items p {
+        font-weight: 500;
+        color: #fff;
+        font-size: 18px;
+        margin: 0;
+    }
+
+.section-right {
+    grid-area: b;
+}
+
+.section-left-items-div {
+    /* margin: 25px 0 45px;*/
+    margin-top: 20px;
+}
+
+.section-left-items-div2 {
+    width: 100%;
+}
+
+.section-right {
+    display: flex;
+    justify-content: center;
+}
+
+    .section-right img {
+        /*width: 780px;*/
+        /*width: 80%;*/
+        width: 45%;
+        align-self: flex-end;
+    }
+
+.button-iniciar-div {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1366px) {
+    .section-right img {
+        width: 500px;
+    }
+
+    .section-left-items h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .section-left-items h1 {
+        font-size: 36px;
+    }
+
+    .section-left-items-div {
+        margin: 15px 0 45px;
+    }
+
+    .container-home {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .section-left {
+        grid-area: b;
+    }
+
+    .section-right {
+        grid-area: a;
+    }
+
+    .section-left-items-button {
+        justify-content: center;
+    }
+
+    .section-left-items-div2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-left-items h3,
+    .section-left-items h1,
+    .section-left-items p {
+        text-align: center;
+        justify-content: center;
+      
+    }
+
+    .section-right img {
+        width: 400px;
+    }
+}

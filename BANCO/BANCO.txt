@@ -1,0 +1,14 @@
+ protected void btnEntrar_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Marilene Sabino\Documents\bancoBiblio.sql..mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            SqlCommand cmd = new SqlCommand("", conn);
+
+            conn.Open();
+            conn.Close();
+        }
+
+        protected void ValidarBanco()
+        {
+
+        }

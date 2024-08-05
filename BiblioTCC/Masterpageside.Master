@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpageside.master.cs" Inherits="BiblioTCC.Masterpageside" %>
+
+<!DOCTYPE html>
+
+<html lang="pt">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <asp:PlaceHolder runat="server">
+     
+    </asp:PlaceHolder>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="Assets/masterpageside.css" rel="stylesheet"/>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+
+</head>
+<body>
+    <form id="form1" runat="server">
+       <asp:ScriptManager ID="ScriptManager" runat="server" EnablePartialRendering="true">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+             <nav class="nav-bar">
+                <div class="logo">
+                    <img src="img/logo-biblio.png" />
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="Inicio.aspx" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="CadastroLivros.aspx" class="nav-link">Catalogação</a></li>
+                        <li class="nav-item"><a href="CadastroEmprestimo.aspx" class="nav-link">Empréstimos</a></li>
+                        <li class="nav-item"><a href="AdministracaoBiblioteca.aspx" class="nav-link">Administração</a></li>
+                        <li class="nav-item"><a href="Busca.aspx" class="nav-link">Busca</a></li>
+                    </ul>
+                </div>
+              </nav>
+
+
+         <div class="area">
+    <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="AdministracaoBiblioteca.aspx">
+                        <i class="fa fa-bookmark"></i>
+                        <span class="nav-text">
+                           Configurações da Biblioteca
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="Relatorio.aspx">
+                       <i class="fa fa-book fa-2x"></i>
+                        <span class="nav-text">
+                            Relatórios
+                        </span>
+                    </a>
+                </li>
+                   <li class="has-subnav">
+                    <a href="Materiais.aspx">
+                       <i class="fa fa-folder"></i>
+                        <span class="nav-text">
+                            Materiais
+                        </span>
+                    </a>
+                </li>
+                </ul>
+        </nav>
+    </div>
+
+        <div class="body">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>
