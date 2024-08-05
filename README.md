@@ -4,14 +4,14 @@
 
 Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) na Instituição de Ensino ETEC Irmã Agostina, pelo curso técnico em Desenvolvimento de Sistemas, tendo como objetivo otimizar de forma eficiente as operações diárias da biblioteca da ETEC, tais como o cadastro, a organização e a consulta do acervo e dos empréstimos de forma intuitiva.
 
-### Funcionalidades:
+## Funcionalidades:
 
 * Cadastro e edição de livros.
 * Busca avançada por gênero e palavra-chave.
 * Geração de relatórios personalizados.
 * Empréstimo e devolução de livros.
 
-### Tecnologias Utilizadas:
+## Tecnologias Utilizadas:
 
 * ASP.NET Core
 * Bootstrap
@@ -84,7 +84,7 @@ Para configurar e rodar o projeto localmente, siga os passos abaixo:
 
 Agora seu ambiente de desenvolvimento deve estar configurado e você deve ser capaz de acessar o projeto localmente.
 
-### Colaboradores:
+## Colaboradores:
 
 * André de Sousa Neves
 * Beatriz Santos Lima
